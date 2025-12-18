@@ -59,6 +59,7 @@ const Experience = () => {
         'Led backend engineering initiatives for enterprise fintech platform processing $2B+ in annual transactions across multiple African markets.',
       achievements: [
         'Architected and deployed 40+ microservices using Spring Boot and Kubernetes, improving system scalability and reducing deployment time by 79%',
+        'Developed enterprise SaaS application for solar installation operations featuring automated invoice generation, GPS tracking, and Google Maps-based solar optimizer - reducing administrative overhead by 70%',
         'Implemented CI/CD pipelines enabling zero-downtime deployments with daily production releases',
         'Maintained 99.9% uptime for payment processing systems handling 500,000+ daily transactions',
         'Led international expansion projects in Liberia and Ghana, managing deployment and system integration',

@@ -29,7 +29,7 @@ const About = () => {
     { number: '6+', label: 'Years Experience' },
     { number: '$2B+', label: 'Annual Transactions' },
     { number: '15M+', label: 'Active Users' },
-    { number: '99.9%', label: 'System Uptime' },
+    { number: '40+', label: 'REST APIs Built' },
   ];
 
   return (

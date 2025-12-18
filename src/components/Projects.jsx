@@ -61,13 +61,13 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Microservices E-Commerce',
-      type: 'Enterprise Architecture',
+      title: 'Solar Installation Management System',
+      type: 'Full-Stack Enterprise SaaS',
       description:
-        'Production-ready microservices platform with API Gateway, service discovery, and event-driven architecture. Deployed on AWS EKS with full CI/CD automation.',
-      techStack: ['Spring Boot', 'Kubernetes', 'PostgreSQL', 'Redis', 'RabbitMQ'],
+        'Comprehensive enterprise application for solar installation companies featuring automated weekly invoice generation, GPS-based technician tracking, multi-location inventory management, and an innovative solar optimizer with Google Maps integration for roof measurements and optimal panel placement calculations. Reduces administrative time by 70% and saves 10+ hours weekly.',
+      techStack: ['Spring Boot', 'React', 'TypeScript', 'PostgreSQL', 'Docker', 'AWS S3', 'Google Maps API', 'OAuth2'],
       demoLink: '#',
-      githubLink: '#',
+      githubLink: 'https://github.com/tungatadube/solar-management-system',
     },
     {
       title: 'Payment Processing System',

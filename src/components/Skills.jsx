@@ -49,8 +49,12 @@ const Skills = () => {
       skills: ['Java', 'Spring Boot', 'Spring Security', 'Hibernate', 'REST APIs', 'Microservices'],
     },
     {
+      title: 'Frontend Development',
+      skills: ['React', 'TypeScript', 'Material-UI', 'Google Maps API'],
+    },
+    {
       title: 'DevOps & Cloud',
-      skills: ['Docker', 'Kubernetes', 'AWS', 'Jenkins', 'GitLab CI/CD', 'GitHub Actions'],
+      skills: ['Docker', 'Kubernetes', 'AWS', 'AWS S3', 'AWS RDS', 'Jenkins', 'GitLab CI/CD', 'GitHub Actions'],
     },
     {
       title: 'Databases & Messaging',
@@ -78,7 +82,7 @@ const Skills = () => {
         </motion.div>
 
         <div className="bg-gradient-to-br from-dark-lighter to-dark-darker rounded-2xl p-8 md:p-12 shadow-2xl border border-primary/10">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, index) => (
               <SkillCategory
                 key={category.title}
