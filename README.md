@@ -1,5 +1,7 @@
 # Portfolio Website
 
+**Live Site:** [https://mduduzidube.com](https://mduduzidube.com)
+
 A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features a dark/light mode toggle, smooth animations, and a working contact form.
 
 ## Features
