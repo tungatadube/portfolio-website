@@ -22,9 +22,14 @@ const Navbar = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
+    { name: 'CV', href: '/cv-enhanced.html', external: true },
   ];
 
-  const scrollToSection = (e, href) => {
+  const scrollToSection = (e, href, external = false) => {
+    if (external) {
+      setIsOpen(false);
+      return;
+    }
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
@@ -63,10 +68,11 @@ const Navbar = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
-                onClick={(e) => scrollToSection(e, link.href)}
+                onClick={(e) => scrollToSection(e, link.href, link.external)}
                 className="text-gray-light dark:text-gray-light hover:text-primary dark:hover:text-primary font-semibold transition-colors relative group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                {...(link.external && { target: '_blank', rel: 'noopener noreferrer' })}
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
@@ -100,8 +106,9 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              onClick={(e) => scrollToSection(e, link.href)}
+              onClick={(e) => scrollToSection(e, link.href, link.external)}
               className="block px-4 py-2 text-gray-light dark:text-gray-light hover:text-primary dark:hover:text-primary hover:bg-gray-dark/30 dark:hover:bg-gray-dark/30 rounded-lg font-semibold transition-colors"
+              {...(link.external && { target: '_blank', rel: 'noopener noreferrer' })}
             >
               {link.name}
             </a>

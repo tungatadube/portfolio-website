@@ -85,6 +85,17 @@ const Hero = () => {
             >
               View Projects
             </motion.a>
+
+            <motion.a
+              href="/cv-enhanced.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-transparent border-2 border-secondary text-gray-light font-semibold rounded-lg hover:bg-secondary hover:text-white transition-all"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View CV
+            </motion.a>
           </motion.div>
         </div>
       </div>
