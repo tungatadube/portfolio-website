@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mduduzi Frederick Dube - Software Engineer CV</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Software Engineer with 6+ years in fintech systems architecture, Spring Boot, CI/CD, and Kubernetes. Based in Adelaide, South Australia.">
+    <meta name="keywords" content="Software Engineer, Java, Spring Boot, Fintech, DevOps, Kubernetes, CI/CD, Adelaide">
+    <meta name="author" content="Mduduzi Frederick Dube">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Mduduzi Frederick Dube - Software Engineer">
+    <meta property="og:description" content="Software Engineer with 6+ years in fintech systems architecture, Spring Boot, CI/CD, and Kubernetes.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://tungatazebiwe.tech">
+    <meta property="profile:first_name" content="Mduduzi">
+    <meta property="profile:last_name" content="Dube">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Mduduzi Frederick Dube - Software Engineer">
+    <meta name="twitter:description" content="Software Engineer with 6+ years in fintech systems architecture, Spring Boot, CI/CD, and Kubernetes.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mduduzi Frederick Dube",
+        "jobTitle": "Software Engineer",
+        "email": "tungatadube@gmail.com",
+        "telephone": "+61 0408704216",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Adelaide",
+            "addressRegion": "South Australia",
+            "addressCountry": "AU"
+        },
+        "url": "https://tungatazebiwe.tech",
+        "sameAs": [
+            "https://github.com/tungatadube"
+        ],
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "The National University of Science And Technology"
+        },
+        "knowsAbout": [
+            "Java", "Spring Boot", "Microservices", "Kubernetes", "Docker", 
+            "CI/CD", "DevOps", "Fintech", "Payment Systems"
+        ]
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary-dark: #1a1a1a;
+            --secondary-dark: #2a2a2a;
+            --text-muted: #555555;
+            --text-light: #666666;
+            --accent-blue: #0066cc;
+            --accent-blue-hover: #0052a3;
+            --border-color: #e0e0e0;
+            --section-border: #cccccc;
+            --bg-subtle: #fafafa;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--secondary-dark);
+            background: #ffffff;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(0, 102, 204, 0.02) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(0, 102, 204, 0.02) 0%, transparent 50%);
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            background: white;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--section-border);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        .contact-info a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--accent-blue);
+            transition: width 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-blue-hover);
+        }
+
+        .contact-info a:hover::after {
+            width: 100%;
+        }
+
+        /* Sections with staggered animations */
+        .section {
+            margin-bottom: 20px;
+            padding-top: 16px;
+            border-top: 1px solid var(--section-border);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .section:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .section:nth-child(2) { animation-delay: 0.1s; }
+        .section:nth-child(3) { animation-delay: 0.2s; }
+        .section:nth-child(4) { animation-delay: 0.3s; }
+        .section:nth-child(5) { animation-delay: 0.4s; }
+        .section:nth-child(6) { animation-delay: 0.5s; }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: -4px;
+            left: 0;
+            background: linear-gradient(90deg, var(--accent-blue), transparent);
+            transition: width 0.6s ease;
+        }
+
+        .section:hover .section-title::after {
+            width: 100%;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--secondary-dark);
+        }
+
+        /* Technologies */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .tech-category {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: var(--bg-subtle);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .tech-category:hover {
+            background: #f0f0f0;
+            transform: translateX(4px);
+        }
+
+        .tech-label {
+            font-weight: 600;
+            color: var(--primary-dark);
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+
+        .tech-items {
+            font-size: 13px;
+            color: var(--secondary-dark);
+            line-height: 1.5;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 16px;
+            padding: 10px;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .job:hover {
+            border-left-color: var(--accent-blue);
+            background: var(--bg-subtle);
+            padding-left: 14px;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: 3px;
+        }
+
+        .job-period {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .job-responsibilities {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job-responsibilities li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--secondary-dark);
+        }
+
+        .job-responsibilities li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 12px;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+        .education-item:hover {
+            background: var(--bg-subtle);
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: var(--primary-dark);
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .institution {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+
+        .education-details {
+            font-size: 13px;
+            color: var(--secondary-dark);
+            line-height: 1.5;
+        }
+
+        /* Agile & QA Expertise */
+        .expertise-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .expertise-list li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            font-size: 13px;
+            line-height: 1.5;
+            color: var(--secondary-dark);
+        }
+
+        .expertise-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+            font-weight: bold;
+        }
+
+        .expertise-label {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0;
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                opacity: 1;
+                animation: none;
+            }
+
+            .header {
+                opacity: 1;
+                animation: none;
+            }
+            
+            a {
+                color: var(--primary-dark);
+                text-decoration: none;
+            }
+
+            a::after {
+                display: none;
+            }
+
+            .tech-category,
+            .job,
+            .education-item {
+                background: transparent !important;
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 32px 16px;
+            }
+            
+            .name {
+                font-size: 28px;
+            }
+            
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="name">MDUDUZI FREDERICK DUBE</h1>
+            <p class="title">Software Engineer</p>
+            <div class="contact-info">
+                <div>
+                    <a href="mailto:tungatadube@gmail.com">tungatadube@gmail.com</a> | 
+                    <a href="tel:+610408704216">+61 0408704216</a> | 
+                    Adelaide, South Australia
+                </div>
+                <div>
+                    <a href="https://tungatazebiwe.tech" target="_blank" rel="noopener noreferrer">tungatazebiwe.tech</a> | 
+                    <a href="https://github.com/tungatadube" target="_blank" rel="noopener noreferrer">github.com/tungatadube</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Software Engineer with 6+ years of specialized experience in fintech systems architecture and development. 
+                Proven track record of successfully migrating proprietary legacy framework applications to modern Spring Boot 
+                infrastructure, implementing CI/CD pipelines, and managing digital technologies across diverse markets. 
+                Experienced in containerization, orchestration, and leading cross-functional teams in high-stakes financial 
+                technology environments serving millions of users. Skilled in agile collaboration with UX designers, 
+                Business Analysts, and Testing teams to deliver robust, quality-assured solutions.
+            </p>
+        </section>
+
+        <!-- Core Technologies -->
+        <section class="section">
+            <h2 class="section-title">Core Technologies</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <div class="tech-label">Backend Development</div>
+                    <div class="tech-items">Java (6+ years), Spring Framework, Spring Boot, RESTful API Design, Microservices Architecture, Spring Security, Spring Data JPA</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">DevOps & Infrastructure</div>
+                    <div class="tech-items">Jenkins CI/CD, GitLab CI/CD, Kubernetes, Kubectl Administration, Docker Containerization, Application Server Migration</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">Database & Storage</div>
+                    <div class="tech-items">Relational Databases, Database Design, Performance Optimization, Query Testing</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">Development Practices</div>
+                    <div class="tech-items">Git Version Control, Unit Testing (JUnit, Mockito), Agile Methodologies, Code Reviews, Security Principles, Regression Testing, User Acceptance Testing</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">System Administration</div>
+                    <div class="tech-items">Bash Scripting, Linux Server Administration, Shell Scripting, Server Configuration</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">Fintech Domain</div>
+                    <div class="tech-items">Payment Systems, Mobile Money, Regulatory Compliance, Financial Data Security, API Integration, Identity Verification, Portfolio Management Systems</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">Scientific Computing</div>
+                    <div class="tech-items">Machine Learning Fundamentals, Data Analysis, Computational Methods, Quantitative Systems</div>
+                </div>
+                <div class="tech-category">
+                    <div class="tech-label">Collaboration & Agile Delivery</div>
+                    <div class="tech-items">Cross-functional Team Leadership, UX Designer Collaboration, Business Analyst Partnership, QA/Testing Team Coordination, Iterative Development, Sprint Planning</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Engineer - Ecocash Holdings</div>
+                    <div class="job-period">2020 - 2025</div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Led migration of legacy Spring applications to Spring Boot infrastructure across Zimbabwe, Burundi, and Ghana markets</li>
+                    <li>Architected investment portfolio and mobile money platforms serving millions of users with high availability</li>
+                    <li>Implemented CI/CD pipelines using Jenkins and GitLab, reducing deployment time from 6 hours to 75 minutes</li>
+                    <li>Managed Kubernetes deployments and coordinated UAT cycles with Business Analysts and QA teams</li>
+                    <li>Enhanced customer onboarding efficiency by 40% through iterative UX collaboration</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Software Developer - Cassava Technologies</div>
+                    <div class="job-period">2019 - 2020</div>
+                </div>
+                <ul class="job-responsibilities">
+                    <li>Migrated legacy financial systems to microservices architecture without service interruptions</li>
+                    <li>Led deployments across Botswana, Lesotho, and Zimbabwe serving 2+ million active users</li>
+                    <li>Implemented quality gates including unit testing, integration testing, and regression testing automation</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="degree">Bachelor of Engineering Honours in Industrial and Manufacturing Systems Engineering</div>
+                <div class="institution">The National University of Science And Technology</div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Scientific Computing and Machine Learning Courses</div>
+                <div class="institution">World Quant University</div>
+                <div class="education-details">Completed: Scientific Computing Fundamentals, Machine Learning and AI Applications, Quantitative Analysis Methods</div>
+            </div>
+        </section>
+
+        <!-- Agile & Quality Assurance Expertise -->
+        <section class="section">
+            <h2 class="section-title">Agile & Quality Assurance Expertise</h2>
+            <ul class="expertise-list">
+                <li><span class="expertise-label">Agile Methodologies:</span> Experienced in Scrum framework with daily standups, sprint planning, retrospectives, and iterative delivery cycles</li>
+                <li><span class="expertise-label">Cross-functional Collaboration:</span> Proven track record working with UX Designers, Solutions Architects, Business Analysts, and QA Testing teams throughout SDLC</li>
+                <li><span class="expertise-label">Quality Engineering:</span> Comprehensive testing approach including unit tests (JUnit, Mockito), integration tests, regression testing automation, and user acceptance testing coordination</li>
+                <li><span class="expertise-label">Requirements Analysis:</span> Partner with Business Analysts to translate business requirements into technical specifications for investment and financial systems</li>
+                <li><span class="expertise-label">Test-Driven Development:</span> Implement TDD practices to ensure code quality and facilitate regression testing</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
